@@ -10,7 +10,6 @@ admin = name;
 alert(admin);
 
 
-
 // Giving the Right Name
 
 let ourPlanet = 'Earth';
