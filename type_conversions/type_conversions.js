@@ -28,18 +28,22 @@ let h = "4" - 2;
 
 let i = "4px" - 2;
 // 2
+// NaN
 
 let j = " -9 " + 5;
 // -95
+// " -9 5"
 
 let k = " -9 " - 5;
 // -14
 
 let l = null + 1;
-// 
+// ?
+// 1
 
 let m = undefined + 1;
-//
+// ?
+// NaN
 
 let n = " \t \n " -2;
 // 
