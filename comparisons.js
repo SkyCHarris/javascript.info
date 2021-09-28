@@ -7,7 +7,7 @@ const fruit = "apple" > "pineapple";
 console.log(fruit);
 
 const numberStrings = "2" > "12";
-// False
+// True
 console.log(numberStrings);
 
 const undeNul = undefined == null;
@@ -23,5 +23,5 @@ const nulTestOne = null == "\n0\n";
 console.log(nulTestOne);
 
 const nulTestTwo = null === +"\n0\n";
-// True
+// False
 console.log(nulTestTwo);
