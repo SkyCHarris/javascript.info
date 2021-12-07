@@ -8,8 +8,9 @@ if (1 || 0) {
     alert( 'truthy!' );
 }
 
-let hour = 9;
+let hour = 12;
+let isWeekend = true;
 
-if (hour < 10 || hour > 18) {
-    alert( 'The office is close.' );
+if (hour < 10 || hour > 18 || isWeekend) {
+    alert( 'The office is closed.' );
 }
