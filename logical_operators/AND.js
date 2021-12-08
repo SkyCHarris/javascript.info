@@ -10,3 +10,7 @@ let minute = 30;
 if (hour == 12 && minute == 30) {
     alert( 'The time is 12:30' );
 }
+
+if (1 && 0) {
+    alert( "wont work, because the result is falsy" );
+}
