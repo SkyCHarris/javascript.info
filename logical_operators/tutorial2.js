@@ -13,3 +13,6 @@ let lastName = "";
 let nickName = "SuperCoder";
 
 alert( firstName || lastName || nickName || "Anyonymous");
+
+true || alert("not printed");
+false || alert("printed");
