@@ -40,3 +40,17 @@ alert(height ?? 100); // 0
 // Precedence
 
 // 1
+let height = null;
+let width = null;
+
+// important: use parentheses
+let area = (height ?? 100) * (width ?? 50);
+
+alert(area); 
+
+// without parentheses
+let area = height ?? 100 * width ?? 50;
+
+// ...works this way (not what we want)
+let area = height ?? (100 * width) ?? 50;
+
