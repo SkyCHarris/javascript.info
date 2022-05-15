@@ -53,3 +53,55 @@ if (i <3) { alert(i); i++}
 if (i <3) { alert(i); i++}
 // ...finish, because now i == 3
 
+
+// Skipping Parts
+
+let i = 0 // we have i already declared and assigned
+
+for (; i<3; i++) { // no need for "begin"
+    alert( i ); // 0, 1, 2
+}
+
+// remove step part
+
+let i = 0;
+
+for (; i < 3;) {
+    alert( i ++ );
+}
+
+// remove everything
+
+for (;;) {
+    // repeats without limits
+}
+
+
+// Breaking the loop
+
+let sum = 0;
+
+while (true) {
+    let value = +prompt("Enter a number", '');
+    if (!value) break; // (*)
+    sum += value;
+}
+alert( 'Sum: ' + sum );
+
+
+
+
+
+
+
+
+// Breaking the loop
+
+for (let i=0; i<3; i++) {
+    for (let j=0; j<3; j++) {
+        let input = prompt(`Value at coords (${i},${j})`, '');
+        // what if we want to exit from here to Done (below) ?
+    }
+}
+
+alert('Done!');
