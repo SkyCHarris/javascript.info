@@ -15,5 +15,28 @@ let firstName = null;
 let lastName = null;
 let nickName = "Supercoder";
 
-// shows the first defined value
+// shows the first defined value:
 alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+
+
+// Comparison with ||
+
+
+// 1
+let firstName = null;
+let lastName = null;
+let nickName = "Supercoder";
+
+// shows the first truthy value:
+alert(firstName || lastName || nickName || "Anonymous"); // Supercoder
+
+// 2
+let height = 0;
+
+alert(height || 100); // 100
+alert(height ?? 100); // 0
+
+
+// Precedence
+
+// 1
