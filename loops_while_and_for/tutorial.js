@@ -90,12 +90,35 @@ alert( 'Sum: ' + sum );
 
 
 
+// Continue to the next iteration
+
+ for (let i=0; i<10; i++) {
+     
+    // if ture skip the remaining part of the body
+    if (i % 2 == 0) continue;
+
+    alert(i); // 1, then 3, 5, 7, 9
+ }
+
+// continue directive helps decrease nesting
+
+for (let i = 0; i < 10; i++) {
+    if (i % 2) {
+        alert(i);
+    }
+}
+
+// no break/continue to the right side of '?'
+
+if (i > 5) {
+    alert(i);
+} else {
+    continue;
+}
 
 
 
-
-
-// Breaking the loop
+// Labels for break/continue
 
 for (let i=0; i<3; i++) {
     for (let j=0; j<3; j++) {
