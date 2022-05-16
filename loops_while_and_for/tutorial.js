@@ -100,7 +100,7 @@ alert( 'Sum: ' + sum );
     alert(i); // 1, then 3, 5, 7, 9
  }
 
-// continue directive helps decrease nesting
+// Continue directive helps decrease nesting
 
 for (let i = 0; i < 10; i++) {
     if (i % 2) {
@@ -108,7 +108,7 @@ for (let i = 0; i < 10; i++) {
     }
 }
 
-// no break/continue to the right side of '?'
+// No break/continue to the right side of '?'
 
 if (i > 5) {
     alert(i);
@@ -128,3 +128,32 @@ for (let i=0; i<3; i++) {
 }
 
 alert('Done!');
+
+// break <labelName>
+
+outer: for (let i=0; i<3; i++) {
+    for (let j=0; j<3; j++) {
+        let input = prompt(`Value at coords (${i},${j})`, '');
+
+        // if an emptry string or canceled, then break out of both loops
+        if (!input) break outer; // (*)
+
+        // do something with the value...
+    }
+}
+
+alert('Done!');
+
+// Labels do not allow to "jump" anywhere
+
+break label; // jump to the label below (doesn't work)
+
+label: for (...)
+
+// must be inside code block
+
+label: {
+    // ...
+    break label; // works
+    // ...
+}
